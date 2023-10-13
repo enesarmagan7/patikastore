@@ -1,5 +1,6 @@
 # patikastore
- sanal mağaza yönetimi uygulaması.
+ sanal mağaza yönetimi uygulaması. 
+ 
 id : Markanın sistemde kayıtlı benzersiz numarası
 
 
