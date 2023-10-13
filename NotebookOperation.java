@@ -42,11 +42,11 @@ public class NotebookOperation {
         switch (choice) {
             case 1:
                 System.out.println("-----------------------------------------------------------");
-                System.out.println("| ID | Ürün Adı                | Fiyat     | Marka   | Depolama | Ekran | RAM |");
+                System.out.println("| ID | Ürün Adı                | Fiyat     | Marka   | Depolama | Ekran (Inc) | RAM |");
                 System.out.println("-----------------------------------------------------------");
                 for (Notebook note : sortedNotebooksByID) {
 
-                    System.out.format("| %2d | %-24s | %-9.2f | %-7s | %-9d | %-5.1f | %-3d |\n", note.getId(), note.getProductName(), note.getPrice(), note.getBrand().getBrandName(), note.getStorage(), note.getScreenSize(), note.getRam());
+                    System.out.format("| %2d | %-24s | %-9.2f | %-7s | %-8d | %-5.1f (Inc) | %-3d |\n", note.getId(), note.getProductName(), note.getPrice(), note.getBrand().getBrandName(), note.getStorage(), note.getScreenSize(), note.getRam());
 
                 }
                 System.out.println("-----------------------------------------------------------");
@@ -54,10 +54,10 @@ public class NotebookOperation {
 
             case 2:
                 System.out.println("-----------------------------------------------------------");
-                System.out.println("| ID | Ürün Adı                | Fiyat     | Marka   | Depolama | Ekran | RAM |");
+                System.out.println("| ID | Ürün Adı                | Fiyat     | Marka   | Depolama | Ekran (Inc) | RAM |");
                 System.out.println("-----------------------------------------------------------");
                 for (Notebook a : sortedNotebooksByBrand) {
-                    System.out.format("| %2d | %-24s | %-9.2f | %-7s | %-9d | %-5.1f | %-3d |\n", a.getId(), a.getProductName(), a.getPrice(), a.getBrand().getBrandName(), a.getStorage(), a.getScreenSize(), a.getRam());
+                    System.out.format("| %2d | %-24s | %-9.2f | %-7s | %-8d | %-5.1f (Inc) | %-3d |\n", a.getId(), a.getProductName(), a.getPrice(), a.getBrand().getBrandName(), a.getStorage(), a.getScreenSize(), a.getRam());
                 }
                 break;
 

@@ -83,11 +83,11 @@ public class MobilePhoneOperation {
         switch (choice) {
             case 1:
                 System.out.println("------------------------------------------------------------------------------------------------------------------------");
-                System.out.println("| ID | Ürün Adı               | Fiyat     | Marka   | Depolama | Ekran | Kamera | Pil    | RAM | Renk   |");
+                System.out.println("| ID | Ürün Adı               | Fiyat     | Marka   | Depolama | Ekran (Inc) | Kamera | Pil    | RAM | Renk   |");
                 System.out.println("------------------------------------------------------------------------------------------------------------------------");
                 for (MobilPhone phone : sortedMobilePhonesByID) {
 
-                    System.out.format("| %2d | %-21s | %-8.2f TL | %-6s | %-8d | %-5.1f | %-6d | %-6d | %-3d | %-7s |\n",
+                    System.out.format("| %2d | %-21s | %-8.2f TL | %-6s | %-8d | %-5.1f (Inc) | %-6d | %-6d | %-3d | %-7s |\n",
                             phone.getId(), phone.getProductName(), phone.getPrice(), phone.getBrand().getBrandName(),
                             phone.getStorage(), phone.getScreenSize(), phone.getCamera(), phone.getBatteryPower(), phone.getRam(), phone.getColour());
 
@@ -97,10 +97,10 @@ public class MobilePhoneOperation {
 
             case 2:
                 System.out.println("------------------------------------------------------------------------------------------------------------------------");
-                System.out.println("| ID | Ürün Adı               | Fiyat     | Marka   | Depolama | Ekran | Kamera | Pil    | RAM | Renk   |");
+                System.out.println("| ID | Ürün Adı               | Fiyat     | Marka   | Depolama | Ekran (Inc) | Kamera | Pil    | RAM | Renk   |");
                 System.out.println("------------------------------------------------------------------------------------------------------------------------");
                 for (MobilPhone a : sortedMobilePhonesByBrand) {
-                    System.out.format("| %2d | %-21s | %-8.2f TL | %-6s | %-8d | %-5.1f | %-6d | %-6d | %-3d | %-7s |\n",
+                    System.out.format("| %2d | %-21s | %-8.2f TL | %-6s | %-8d | %-5.1f (Inc) | %-6d | %-6d | %-3d | %-7s |\n",
                             a.getId(),a.getProductName(), a.getPrice(), a.getBrand().getBrandName(),
                             a.getStorage(), a.getScreenSize(), a.getCamera(), a.getBatteryPower(), a.getRam(), a.getColour());
                 }
